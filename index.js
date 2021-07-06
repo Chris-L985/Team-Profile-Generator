@@ -158,12 +158,12 @@ const addNewEmployee = () => {
                 }, 
             },
             ]).then(
-                ({ employeeName, employeeId, employeeEmail, engineerGithubName }) => {
+                ({ employeeName, employeeId, employeeEmail, engineerGithub }) => {
                     let engineer = new Engineer(
                         employeeName,
                         employeeId,
                         employeeEmail,
-                        engineerGithubName
+                        engineerGithub
                     );
                     teamInfo.push(engineer);
                     return addNewEmployee();
